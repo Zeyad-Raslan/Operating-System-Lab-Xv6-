@@ -197,6 +197,8 @@ UPROGS=\
         $U/_sleep\
         $U/_pingpong\
         $U/_primes\
+        $U/_find\
+        $U/_xargs\
 
 
 ifeq ($(LAB),syscall)
@@ -246,7 +248,7 @@ barrier: notxv6/barrier.c
 endif
 
 ifeq ($(LAB),pgtbl)
-UPROGS += \
+UPROGS +=  \
 	$U/_pgtbltest
 endif
 
